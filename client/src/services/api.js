@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5002/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://flatconnect-y1qy.onrender.com/api';
 
 // Create axios instance with default config
 const api = axios.create({
